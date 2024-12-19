@@ -1,0 +1,75 @@
+/* Custom Styles for Tall Sections */
+.container {
+    margin-bottom: 30px;
+}
+
+.tall-section {
+    background-color: #f8f8f8;
+    height: 700px; /* Adjust the height */
+    padding: 20px;
+}
+
+/* Section Headings */
+h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Custom Styles for Navbar */
+.navbar-default {
+    background-color: #333;
+    border-color: #333;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav > li > a {
+    color: #fff !important;
+}
+
+/* Mobile View Dropdown */
+@media (max-width: 767px) {
+    .navbar-collapse {
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav > li {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Grid Layout for Sections */
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    /* Desktop View (3 equal sections) */
+    .row {
+        margin-top: 80px;
+    }
+
+    .col-md-4 {
+        height: 700px;
+        background-color: #f0f0f0;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Mobile View (1 section per row) */
+    .col-xs-12 {
+        height: auto;
+    }
+}
